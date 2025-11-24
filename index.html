@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rajshekar Reddy Saama | Java Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Rajshekar Reddy Saama, Java Full Stack Developer with 6+ years of experience in Java, Spring Boot, Microservices, Angular, React, AWS, Azure, and cloud-native applications." />
+  <style>
+    :root {
+      --bg:#0f172a;
+      --card:#020617;
+      --accent:#22c55e;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --border:#1f2937;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 50%, #000 100%);
+      color:var(--text);
+    }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    header {
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(15,23,42,0.85);
+      border-bottom:1px solid var(--border);
+    }
+    .nav {
+      max-width:1100px; margin:0 auto;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 20px;
+    }
+    .nav-title { font-weight:700; letter-spacing:0.03em; font-size:0.95rem; text-transform:uppercase; }
+    .nav-links a {
+      margin-left:20px; font-size:0.9rem; color:var(--muted);
+    }
+    .nav-links a:hover { color:var(--accent); }
+
+    main { max-width:1100px; margin:0 auto; padding:32px 20px 60px; }
+
+    section { margin-bottom:56px; }
+
+    .badge {
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:0.8rem;
+      padding:4px 10px;
+      border-radius:999px;
+      background:rgba(34,197,94,0.1);
+      border:1px solid rgba(34,197,94,0.5);
+      color:var(--accent);
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+    }
+    h1 {
+      font-size:2.4rem;
+      margin:16px 0 8px;
+    }
+    h2 {
+      font-size:1.5rem;
+      margin:0 0 4px;
+    }
+    h3 { margin:0 0 4px; font-size:1.05rem; }
+    p { margin:4px 0 10px; line-height:1.6; font-size:0.95rem; }
+    .muted { color:var(--muted); font-size:0.9rem; }
+
+    .hero {
+      display:grid; grid-template-columns: minmax(0, 2fr) minmax(0,1.4fr);
+      gap:24px; align-items:center;
+    }
+    @media (max-width:800px){
+      .hero { grid-template-columns:1fr; }
+    }
+
+    .card {
+      background: linear-gradient(135deg, rgba(15,23,42,1), rgba(2,6,23,1));
+      border-radius:16px;
+      padding:18px 18px 16px;
+      border:1px solid rgba(148,163,184,0.15);
+      box-shadow:0 18px 35px rgba(0,0,0,0.45);
+    }
+    .card + .card { margin-top:14px; }
+
+    .two-col {
+      display:grid;
+      grid-template-columns: minmax(0,1.2fr) minmax(0,1.2fr);
+      gap:18px;
+    }
+    @media (max-width:900px){
+      .two-col { grid-template-columns:1fr; }
+    }
+    ul { padding-left:18px; margin:6px 0 4px; }
+    li { margin-bottom:4px; font-size:0.9rem; line-height:1.5; }
+
+    .tag-list {
+      display:flex; flex-wrap:wrap; gap:6px;
+      margin-top:6px;
+    }
+    .tag {
+      font-size:0.8rem;
+      padding:4px 8px;
+      border-radius:999px;
+      border:1px solid rgba(148,163,184,0.4);
+      color:var(--muted);
+    }
+
+    .section-title {
+      display:flex; align-items:baseline; justify-content:space-between;
+      margin-bottom:16px;
+    }
+    .section-title small { color:var(--muted); font-size:0.8rem; }
+
+    .contact-grid {
+      display:grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr);
+      gap:20px;
+    }
+    @media (max-width:800px){
+      .contact-grid { grid-template-columns:1fr; }
+    }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 16px;
+      border-radius:999px;
+      font-size:0.9rem;
+      border:1px solid rgba(148,163,184,0.6);
+      background:rgba(15,23,42,0.8);
+      cursor:pointer;
+      text-decoration:none;
+    }
+    .btn-primary {
+      border-color:rgba(34,197,94,0.9);
+      background:linear-gradient(135deg,#22c55e,#16a34a);
+      color:#022c22;
+      font-weight:600;
+    }
+    .btn-row { display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; }
+    footer {
+      border-top:1px solid var(--border);
+      padding:16px 20px 26px;
+      margin-top:10px;
+      text-align:center;
+      color:var(--muted);
+      font-size:0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav-title">RAJ SHEKHAR REDDY SAAMA</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / INTRO -->
+    <section>
+      <div class="hero">
+        <div>
+          <div class="badge">Java Full Stack Developer · 6+ Years</div>
+          <h1>Building scalable, cloud-ready enterprise applications.</h1>
+          <p class="muted">
+            I’m <strong>Rajshekar Reddy Saama</strong>, a <strong>Java Full Stack Developer</strong> with over
+            6 years of professional IT experience across <strong>Finance, Banking, Insurance &amp; E-Commerce</strong>.
+            I specialize in <strong>Java/Spring Boot, Microservices, Angular/React, AWS &amp; Azure</strong>
+            and love modernizing legacy systems into clean, cloud-native architectures.
+          </p>
+          <p class="muted">
+            From SDLC, OOP/OOD and UML to production deployments on AWS/GCP and Kubernetes,
+            I focus on writing robust, test-driven and maintainable software that directly supports business outcomes.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#contact">Contact Me</a>
+            <a class="btn" href="mailto:Rajshekar.s0102@gmail.com">Email: Rajshekar.s0102@gmail.com</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <h3>Quick Info</h3>
+            <p><strong>Role:</strong> Java Full Stack Developer</p>
+            <p><strong>Location:</strong> (USA – Phoenix / Open to Relocation)</p>
+            <p><strong>Email:</strong> <a href="mailto:Rajshekar.s0102@gmail.com">Rajshekar.s0102@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> (to be added)</p>
+            <p><strong>GitHub:</strong> (to be added)</p>
+          </div>
+          <div class="card">
+            <h3>Core Focus</h3>
+            <ul>
+              <li>End-to-end Java full stack development</li>
+              <li>Microservices with Spring Boot &amp; REST APIs</li>
+              <li>Angular &amp; React front-end applications</li>
+              <li>AWS / Azure / GCP cloud &amp; containers</li>
+              <li>Agile, TDD and CI/CD automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <small>Summary</small>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <p>
+            I have <strong>around 6+ years</strong> of strong software experience in design,
+            development and deployment of web-based and client-server applications using
+            <strong>Java/J2EE</strong> technologies across <strong>Finance, Banking, Insurance and E-Commerce</strong> domains.
+          </p>
+          <p>
+            I’ve worked in all phases of the <strong>SDLC</strong> – requirements, analysis, design,
+            implementation, testing, deployment and support. I’m very comfortable translating
+            algorithms, ideas and business concepts into high-quality production code.
+          </p>
+          <p>
+            My background includes <strong>OOD/OOP/OOM</strong> using UML, <strong>SOA &amp; REST</strong> architectures,
+            and building robust web services (SOAP &amp; REST) with modern frameworks.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            I have strong experience in <strong>front-end engineering</strong> using HTML, CSS, JavaScript,
+            AngularJS/Angular, React JS, jQuery, AJAX and responsive design, combined with
+            powerful <strong>back-end</strong> stacks like Spring, Spring Boot, Microservices, Hibernate, JDBC, JMS, and
+            messaging platforms like Kafka.
+          </p>
+          <p>
+            I work comfortably with <strong>RDBMS</strong> (Oracle, SQL Server, DB2, MySQL), write stored procedures,
+            triggers and performance-tuned SQL, and use tools like <strong>JUnit, Mockito, Jira, SVN/Git</strong>.
+          </p>
+          <p>
+            I enjoy mentoring, collaborating with cross-functional teams and continuously learning
+            new tools, cloud platforms and frameworks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-title">
+        <h2>Professional Experience</h2>
+        <small>Client Projects</small>
+      </div>
+
+      <!-- Deloitte -->
+      <div class="card">
+        <h3>Deloitte – State of Oregon DOJ · Full Stack Developer</h3>
+        <p class="muted">Phoenix, Arizona · June 2024 – Present</p>
+        <ul>
+          <li>Designed dynamic, cross-browser UI screens using <strong>HTML, CSS, JavaScript, Angular Material, TypeScript and Angular 18</strong>.</li>
+          <li>Migrated legacy <strong>JSP/Struts</strong> front-end to <strong>Angular 18+</strong>, greatly improving responsiveness and UX.</li>
+          <li>Refactored Struts Action classes into <strong>Spring Boot REST controllers</strong> aligned with microservice architecture.</li>
+          <li>Designed and implemented <strong>RESTful APIs</strong> using Spring Boot and integrated them with Angular via services &amp; RxJS.</li>
+          <li>Built reusable, responsive Angular components with Angular Material and Bootstrap.</li>
+          <li>Introduced microservice-based design using Spring Boot, enabling modular deployment and scalability.</li>
+          <li>Worked with <strong>AWS (EC2, S3, RDS)</strong> for cloud-native deployment of Java services.</li>
+          <li>Performed code reviews, mentored junior developers and enforced clean-code and API best practices.</li>
+          <li>Ensured reliability and security via unit tests, exception handling, centralized logging and batch jobs (Spring Batch / Java EE Batch).</li>
+          <li>Used tools like <strong>Swagger</strong> for API documentation and WebSockets/React for real-time UI where needed.</li>
+        </ul>
+        <div class="tag-list">
+          <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Angular 18</span>
+          <span class="tag">Microservices</span><span class="tag">AWS</span><span class="tag">REST APIs</span>
+          <span class="tag">React</span><span class="tag">WebSockets</span><span class="tag">DB2</span>
+        </div>
+      </div>
+
+      <!-- Huntington -->
+      <div class="card">
+        <h3>Huntington Bank · Full Stack Developer</h3>
+        <p class="muted">Columbus, Ohio · May 2023 – April 2024</p>
+        <ul>
+          <li>Worked across SDLC phases in an <strong>Agile/Scrum</strong> environment to deliver banking features.</li>
+          <li>Built UI screens using <strong>JSP, HTML5, CSS3, JavaScript, AJAX, JSON and AngularJS</strong>.</li>
+          <li>Developed secure, scalable <strong>Spring Boot microservices</strong> and exposed/consumed REST APIs.</li>
+          <li>Deployed and managed applications on <strong>AWS ECS/EKS/Fargate</strong> and used Azure storage solutions.</li>
+          <li>Integrated <strong>Docker</strong> with CI/CD pipelines to automate build, test and deployment workflows.</li>
+          <li>Implemented <strong>TDD</strong> using JUnit, Mockito and EasyMock; reduced regression defects.</li>
+          <li>Developed multithreaded core Java classes and leveraged design patterns like MVC, DAO and Session Facade.</li>
+        </ul>
+        <div class="tag-list">
+          <span class="tag">Spring Boot</span><span class="tag">AngularJS</span><span class="tag">Docker</span>
+          <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Oracle</span>
+          <span class="tag">JUnit/Mockito</span>
+        </div>
+      </div>
+
+      <!-- AT&T -->
+      <div class="card">
+        <h3>AT&amp;T · Java Developer</h3>
+        <p class="muted">Atlanta, GA · April 2022 – January 2023</p>
+        <ul>
+          <li>Developed core Java components and <strong>REST web services</strong> using Spring Framework.</li>
+          <li>Built presentation layer using <strong>HTML, JSP, AJAX, XML, JSON</strong> and Struts framework (MVC).</li>
+          <li>Implemented <strong>SOA</strong> with SOAP, WSDL, UDDI and XML-based web services.</li>
+          <li>Deployed applications via <strong>AWS Elastic Beanstalk</strong>, integrating S3 and RDS.</li>
+          <li>Used Spring Core (IOC) and Hibernate; followed TDD using JUnit/Mockito.</li>
+          <li>Ensured database performance and high availability using <strong>Oracle</strong> and best practices.</li>
+        </ul>
+        <div class="tag-list">
+          <span class="tag">Java</span><span class="tag">Struts</span><span class="tag">Spring</span>
+          <span class="tag">Hibernate</span><span class="tag">REST/SOAP</span><span class="tag">AWS</span>
+          <span class="tag">Oracle</span>
+        </div>
+      </div>
+
+      <!-- Logic Planet -->
+      <div class="card">
+        <h3>Logic Planet IT Services · Full Stack Developer</h3>
+        <p class="muted">Hyderabad, India · August 2019 – January 2022</p>
+        <ul>
+          <li>Implemented J2EE layered architecture (server-side objects &amp; client-side interfaces) using proven design patterns.</li>
+          <li>Developed UI using <strong>JavaScript, EmberJS, ReactJS, HTML5, CSS3/SASS, AJAX</strong> and jQuery.</li>
+          <li>Built Spring MVC web applications, data access with JDBC/SQL and Hibernate.</li>
+          <li>Configured CI/CD pipelines (Jenkins/GitLab CI) and integrated <strong>Docker</strong> for microservices deployments.</li>
+          <li>Utilized <strong>AWS Lambda, S3</strong> and GCP services (GKE, Cloud Functions, IAM) for cloud workflows.</li>
+          <li>Optimized SQL queries, wrote stored procedures and used log4j + SVN for logging &amp; version control.</li>
+        </ul>
+        <div class="tag-list">
+          <span class="tag">Spring MVC</span><span class="tag">ReactJS</span><span class="tag">EmberJS</span>
+          <span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">GCP</span>
+          <span class="tag">Jenkins</span><span class="tag">Oracle</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="section-title">
+        <h2>Technical Skills</h2>
+        <small>What I Work With</small>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Backend &amp; Services</h3>
+          <p class="muted">
+            Core Java, Java 8 features (Lambdas, Streams), J2EE, Spring, Spring Boot, Spring MVC,
+            Spring Security, Hibernate, JDBC, JMS, SOA, SOAP, REST, Microservices, Batch jobs.
+          </p>
+          <h3>Frontend</h3>
+          <p class="muted">
+            HTML5, CSS3, SASS/LESS, JavaScript, TypeScript, AngularJS, Angular (4–18), React JS,
+            jQuery, AJAX, Angular Material, Bootstrap, responsive design.
+          </p>
+          <h3>Databases</h3>
+          <p class="muted">
+            Oracle 10g/11g, SQL Server, DB2, MySQL; SQL, PL/SQL, triggers, stored procedures,
+            data modeling, performance tuning.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Cloud &amp; DevOps</h3>
+          <p class="muted">
+            AWS (EC2, S3, RDS, Lambda, ECS, EKS, Fargate), Azure (storage, SQL), GCP (Compute Engine,
+            GKE, Cloud Functions, Cloud Run), Docker, Kubernetes, CI/CD (Jenkins, GitLab CI), WebSphere,
+            WebLogic, JBoss, Tomcat.
+          </p>
+          <h3>Other &amp; Practices</h3>
+          <p class="muted">
+            Python (core language skills), Kafka, RabbitMQ, UML (Use Case, Class, Sequence diagrams),
+            Agile/Scrum, Test-Driven Development, JUnit, Mockito, EasyMock, Jira, Quality Center,
+            SVN/Git, log4j.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (High-level) -->
+    <section id="projects">
+      <div class="section-title">
+        <h2>Key Project Themes</h2>
+        <small>High-level overview</small>
+      </div>
+      <div class="two-col">
+        <div class="card">
+          <h3>Legacy Modernization &amp; Microservices</h3>
+          <p class="muted">
+            Migrated large monolithic and legacy stacks (JSP/Struts) into modern <strong>Spring Boot microservices</strong>
+            with <strong>Angular/React</strong> front-ends for clients in banking, telecom and government sectors.
+          </p>
+          <ul>
+            <li>Improved scalability, modularity and deployment independence.</li>
+            <li>Introduced REST APIs, versioned services and API documentation with Swagger.</li>
+            <li>Standardized coding practices and enforced patterns across teams.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Cloud-Native &amp; Containerized Solutions</h3>
+          <p class="muted">
+            Designed and deployed applications on <strong>AWS, Azure and GCP</strong>, using containers and serverless where appropriate.
+          </p>
+          <ul>
+            <li>Orchestrated deployments using ECS/EKS/Fargate and Kubernetes.</li>
+            <li>Implemented CI/CD pipelines, automated tests and infrastructure consistency.</li>
+            <li>Used Lambda and event-driven patterns (Kafka/RabbitMQ) for async processing.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <small>Let’s connect</small>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <p>
+            I’m open to opportunities as a <strong>Java Full Stack Developer</strong> or related back-end / full-stack roles,
+            especially in cloud-native, microservices and modernization projects.
+          </p>
+          <p>You can reach me at:</p>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:Rajshekar.s0102@gmail.com">Rajshekar.s0102@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> (link will be added later)</li>
+            <li><strong>GitHub:</strong> (link will be added later)</li>
+          </ul>
+          <p class="muted">
+            Once you create your LinkedIn and GitHub profile URLs, replace the placeholders above with URLs.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Useful Links (to update later)</h3>
+          <p class="muted">Sample format you can use:</p>
+          <ul>
+            <li>LinkedIn: <code>https://www.linkedin.com/in/your-profile/</code></li>
+            <li>GitHub: <code>https://github.com/your-username</code></li>
+          </ul>
+          <p class="muted">
+            In HTML, your anchor tags will look like:
+          </p>
+<pre style="font-size:0.75rem; white-space:pre-wrap;">
+&lt;a href="https://www.linkedin.com/in/your-profile/" target="_blank"&gt;
+  LinkedIn
+&lt;/a&gt;
+</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Rajshekar Reddy Saama · Java Full Stack Developer
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
